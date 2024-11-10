@@ -1,7 +1,7 @@
 from degree import *
 import unittest
 
-class Suite(unittest.TestCase):
+class DegreeSuite(unittest.TestCase):
 
     def test_prepare_degree(self):
         data = [1, 2, 3, 4, 5]

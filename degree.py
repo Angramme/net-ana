@@ -39,6 +39,7 @@ def avg_degree(l: List[int]):
     return sum(l)/len(l)
 
 def density(l: List[int]):
+    if len(l) - 1 <= 0: return float('inf')
     return avg_degree(l)/(len(l)-1)
 
 # durfee number
@@ -102,5 +103,6 @@ def main(data: List[int]):
 
 
 if __name__ == "__main__":
-    data = [3, 5, 2, 4, 3, 7, 2, 2]
+    # data = [3, 5, 2, 4, 3, 7, 2, 2]
+    data = [7, 4, 2, 6, 5, 9, 0, 5, 8, 7, 1]
     main(data)
